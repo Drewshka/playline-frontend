@@ -1,18 +1,26 @@
 import "./App.scss";
 import React from "react";
-// import Main from "./components/Main";
 import data from "./data/players.json";
-// import PlayerCard from "./components/PlayerCard";
+// import { PlayerCard } from "./components/PlayerCard/PlayerCard";
+import { PlayerCard } from "./components/PlayerCard/PlayerCard";
+import { Progress } from "./components/Progress/Progress";
+import { CardHeader } from "./components/CardHeader/CardHeader";
+import { Buttons } from "./components/Buttons/Buttons";
+import { Downloads } from "./components/Downloads/Downloads";
 
-import { PlayerCard } from "./components/PlayerCard";
+// import PlayerCard from "./components/PlayerCard";
 // import axios from "axios";
+// import Main from "./components/Main";
 
 // import Spinner from "./components/Spinner/Spinner";
 
-const API =
-  "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json";
+// const API =
+//   "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json";
 
 class App extends React.Component {
+  state = {
+    players: data,
+  };
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -21,10 +29,6 @@ class App extends React.Component {
   //     players: [],
   //   };
   // }
-
-  state = {
-    players: data,
-  };
 
   // state = {
   //   loading: true,
@@ -90,6 +94,8 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* <Main /> */}
+        <Progress />
+        <CardHeader />
         <section className="playerCards">
           {players &&
             players.map((player, index) => {
@@ -102,6 +108,8 @@ class App extends React.Component {
               );
             })}
         </section>
+        <Buttons />
+        <Downloads />
       </div>
     );
   }
