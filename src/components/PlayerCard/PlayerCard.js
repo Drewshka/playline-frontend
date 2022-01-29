@@ -9,7 +9,7 @@ export const PlayerCard = ({ name, points }) => {
 
   return (
     <div className="playerCard">
-      <figure>
+      <figure className="playerCard_figure">
         <img className="playerCard_img" src={image} alt="headshots" />
       </figure>
       <div className="playerCard_info">
