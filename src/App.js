@@ -98,10 +98,10 @@ class App extends React.Component {
         <CardHeader />
         <section className="playerCards">
           {players &&
-            players.map((player, index) => {
+            players.map((player, i) => {
               return (
                 <PlayerCard
-                  key={index}
+                  key={i}
                   name={player.last_name}
                   points={player.points}
                 />

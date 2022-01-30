@@ -1,4 +1,3 @@
-// @use "../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
@@ -8,6 +7,7 @@
   &_figure {
     margin: 0.625rem;
   }
+
   &_img {
     height: 3rem;
     background-color: lightgray;

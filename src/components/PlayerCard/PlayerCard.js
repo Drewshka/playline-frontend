@@ -2,7 +2,6 @@ import React from "react";
 import "./PlayerCard.scss";
 
 export const PlayerCard = ({ name, points }) => {
-  // const image = require(`../assets/headshots/${name}.png`);
   const image = require(`../../assets/headshots/${name}.png`);
 
   console.log(name);
@@ -13,7 +12,7 @@ export const PlayerCard = ({ name, points }) => {
         <img className="playerCard_img" src={image} alt="headshots" />
       </figure>
       <div className="playerCard_info">
-        <h3>{name}</h3>
+        <h4>{name}</h4>
         <div className="playerCard_info-points">
           <p className="points">{points}</p>
         </div>
