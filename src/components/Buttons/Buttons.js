@@ -1,6 +1,6 @@
 import React from "react";
-import notify from "../../assets/icons/notify-me@2x.png";
-import moneyBag from "../../assets/icons/money-bag@2x.png";
+import bellIcon from "../../assets/icons/notify-me@2x.png";
+import moneyBagIcon from "../../assets/icons/money-bag@2x.png";
 import "./Buttons.scss";
 
 export const Buttons = () => {
@@ -12,10 +12,10 @@ export const Buttons = () => {
           <button className="buttons_notify">
             <img
               className="buttons_notify-icon"
-              src={notify}
+              src={bellIcon}
               alt="a bell icon"
             />
-            <p>Notify Me</p>
+            <p className="buttons_notify-para">Notify Me</p>
           </button>
           {/* </figure> */}
         </a>
@@ -26,10 +26,10 @@ export const Buttons = () => {
           <button className="buttons_deposit">
             <img
               className="buttons_deposit-icon"
-              src={moneyBag}
+              src={moneyBagIcon}
               alt="a bar of money icon"
             />
-            <p>Deposit</p>
+            <p className="buttons_deposit-para">Deposit</p>
           </button>
           <div className="line" />
           {/* </figure> */}

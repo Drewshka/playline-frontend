@@ -1,0 +1,32 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.downloads {
+  &_line {
+    border-bottom: 2px solid grey;
+    opacity: 10%;
+    margin-top: 1rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &_para {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary2;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  &_container {
+    @include flex(center, center, row);
+
+    &-figure {
+      margin: 16px 20px;
+
+      &-img {
+        height: 3rem;
+      }
+    }
+  }
+}

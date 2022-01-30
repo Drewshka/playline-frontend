@@ -13,10 +13,10 @@ export const PlayerCard = ({ name, points }) => {
       </figure>
       <div className="playerCard_info">
         <h4>{name}</h4>
-        <div className="playerCard_info-points">
-          <p className="points">{points}</p>
+        <div>
+          <p className="playerCard_info-points">{points}</p>
         </div>
-        <p className="playerCard_points">pts</p>
+        <p className="playerCard_info-pts">PTS</p>
       </div>
     </div>
   );
