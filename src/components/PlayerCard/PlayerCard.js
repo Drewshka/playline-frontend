@@ -8,11 +8,16 @@ export const PlayerCard = ({ name, points }) => {
 
   return (
     <div className="playerCard">
-      <figure className="playerCard_figure">
+      <figure
+        className="playerCard_figure"
+        // style={{
+        //   zIndex: image === "../../assets/headshots/James.png" ? 200 : 0,
+        // }}
+      >
         <img className="playerCard_img" src={image} alt="headshots" />
       </figure>
       <div className="playerCard_info">
-        <h4>{name}</h4>
+        <h4 className="playerCard_info-name">{name}</h4>
         <div>
           <p className="playerCard_info-points">{points}</p>
         </div>

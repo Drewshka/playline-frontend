@@ -1,0 +1,32 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer {
+  &_list {
+    @include flex(center, center, row);
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary;
+    padding: 1rem;
+    font-size: 12px;
+    padding-bottom: 5rem;
+    // display: flex;
+    // background: $backgroundAccent;
+    // border-radius: 2rem;
+    // font-family: SfLight;
+    // opacity: 50%;
+
+    &-item {
+      border-right: 1px solid $primary;
+      padding: 0 1rem;
+    }
+
+    &-item:last-child {
+      border-right: none;
+    }
+
+    &-item:hover {
+      cursor: pointer;
+    }
+  }
+}

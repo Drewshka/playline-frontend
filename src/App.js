@@ -1,12 +1,14 @@
 import "./App.scss";
 import React from "react";
-import data from "./data/players.json";
+import { Header } from "./components/Header/Header";
+import MainCard from "./components/MainCard/MainCard";
+import { Footer } from "./components/Footer/Footer";
+// import data from "./data/players.json";
 // import { PlayerCard } from "./components/PlayerCard/PlayerCard";
-import { PlayerCard } from "./components/PlayerCard/PlayerCard";
-import { Progress } from "./components/Progress/Progress";
-import { CardHeader } from "./components/CardHeader/CardHeader";
-import { Buttons } from "./components/Buttons/Buttons";
-import { Downloads } from "./components/Downloads/Downloads";
+// import { Progress } from "./components/Progress/Progress";
+// import { CardHeader } from "./components/CardHeader/CardHeader";
+// import { Buttons } from "./components/Buttons/Buttons";
+// import { Downloads } from "./components/Downloads/Downloads";
 
 // import PlayerCard from "./components/PlayerCard";
 // import axios from "axios";
@@ -18,9 +20,9 @@ import { Downloads } from "./components/Downloads/Downloads";
 //   "https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json";
 
 class App extends React.Component {
-  state = {
-    players: data,
-  };
+  // state = {
+  //   players: data,
+  // };
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -77,24 +79,26 @@ class App extends React.Component {
   //   axios.get(`${API}`).then((response) => {
   //     console.log("Data: ", response);
   //     this.setState({
-  //       data: response.data,
+  //       data: JSON.parse(response.data),
   //       loading: false,
   //     });
   //   });
   // }
 
   render() {
-    console.log(this.state.players.players);
+    // console.log(this.state.players.players);
     // console.log(this.state.data);
     // console.log(this.state.people);
 
     // if (this.state.loading) return <Spinner />;
 
-    const players = this.state.players.players;
+    // const players = this.state.players.players;
     return (
       <div className="App">
-        {/* <Main /> */}
-        <Progress />
+        <Header />
+        <MainCard />
+        <Footer />
+        {/* <Progress />
         <CardHeader />
         <section className="playerCards">
           {players &&
@@ -109,7 +113,7 @@ class App extends React.Component {
             })}
         </section>
         <Buttons />
-        <Downloads />
+        <Downloads /> */}
       </div>
     );
   }

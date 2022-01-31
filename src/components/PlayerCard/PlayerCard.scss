@@ -3,20 +3,37 @@
 
 .playerCard {
   @include flex(center, center, column);
+  //   margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  //   margin-left: -0.3rem;
+  margin-top: 2rem;
+  min-height: 8rem;
+  //   animation: fadein 0.5s ease-in;
 
   &_figure {
     margin: 0.625rem;
   }
 
+  //   &_figure:nth-of-type(1) {
+  //     z-index: 200;
+  //   }
+
   &_img {
     height: 3rem;
     background-color: lightgray;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid white;
   }
 
   &_info {
     @include flex(center, center, column);
+
+    &-name {
+      font-family: Arial, Helvetica, sans-serif;
+      color: grey;
+      font-size: 12px;
+      //   text-align: center;
+    }
 
     &-points {
       @include font("Righteous Regular", 400, 16px, 18px, $primary);
@@ -39,8 +56,12 @@
       font-family: Arial, Helvetica, sans-serif;
       color: grey;
       padding-bottom: 1rem;
-      font-size: 1rem;
+      font-size: 12px;
       text-align: center;
     }
   }
+}
+
+figure:first-of-type {
+  z-index: 200;
 }
