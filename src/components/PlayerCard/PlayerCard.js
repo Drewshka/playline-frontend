@@ -1,19 +1,16 @@
 import React from "react";
 import "./PlayerCard.scss";
 
-export const PlayerCard = ({ name, points }) => {
+export const PlayerCard = ({ name, points, index }) => {
   const image = require(`../../assets/headshots/${name}.png`);
-
-  console.log(name);
 
   return (
     <div className="playerCard">
       <figure
-        className="playerCard_figure"
-        // style={{
-        //   zIndex: image === "../../assets/headshots/James.png" ? 200 : 0,
-        // }}
-      >
+        className={"playerCard_figure" + (index === 0 ? "_first" : "")}
+        style={{
+          zIndex: index === 6 ? -1 : "",
+        }}>
         <img className="playerCard_img" src={image} alt="headshots" />
       </figure>
       <div className="playerCard_info">

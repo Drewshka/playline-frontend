@@ -29,6 +29,7 @@ class MainCard extends React.Component {
                   key={i}
                   name={player.last_name}
                   points={player.points}
+                  index={i}
                 />
               );
             })}
