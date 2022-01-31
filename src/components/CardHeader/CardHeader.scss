@@ -9,6 +9,9 @@
     @include tablet {
       @include font("Righteous Regular", 400, 36px, 32px, $primary);
     }
+    @include desktop {
+      @include font("Righteous Regular", 400, 46px, 42px, $primary);
+    }
   }
 
   &_headerSub {
@@ -17,6 +20,9 @@
     text-align: center;
     @include tablet {
       @include font("Righteous Regular", 400, 21px, 32px, $primary2);
+    }
+    @include desktop {
+      @include font("Righteous Regular", 400, 26px, 32px, $primary2);
     }
   }
 
@@ -36,12 +42,3 @@
     margin: 0 auto;
   }
 }
-
-// @include tablet {
-//     position: relative;
-//     padding-top: 1rem;
-//     @include flex(space-between, center, row);
-//     @include desktop {
-//       padding: 0 8rem;
-//       padding-top: 1rem;
-//     }

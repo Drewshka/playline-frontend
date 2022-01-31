@@ -4,20 +4,18 @@
 .playerCard {
   @include flex(center, center, column);
   margin-left: -1.5rem;
-  margin-top: 2rem;
   min-height: 8rem;
-
-  &_figure,
-  &_figure_first {
-    margin: 0.625rem;
+  margin-top: 0;
+  @include tablet {
+    margin-top: 2rem;
   }
 
   &_figure {
-    z-index: 1;
-  }
-
-  &_figure_first {
-    z-index: 200;
+    margin: 0.625rem;
+    margin-bottom: 0;
+    @include tablet {
+      margin: 0.625rem;
+    }
   }
 
   &_img {
@@ -28,9 +26,9 @@
     @include tablet {
       height: 3rem;
     }
-    // background-color: lightgray;
-    // border-radius: 50%;
-    // border: 2px solid white;
+    @include desktop {
+      height: 4rem;
+    }
   }
 
   &_info {
@@ -40,6 +38,9 @@
       @include font("Open Sans", 400, 8px, 10px, $primary2);
       @include tablet {
         @include font("Open Sans", 400, 12px, 14px, $primary2);
+      }
+      @include desktop {
+        @include font("Open Sans", 400, 14px, 16px, $primary2);
       }
     }
 
@@ -54,6 +55,9 @@
       @include tablet {
         @include font("Righteous Regular", 400, 14px, 16px, $primary);
       }
+      @include desktop {
+        @include font("Righteous Regular", 400, 16px, 18px, $primary);
+      }
     }
 
     &-pts {
@@ -62,6 +66,9 @@
       text-align: center;
       @include tablet {
         @include font("Open Sans", 400, 12px, 14px, $primary2);
+      }
+      @include desktop {
+        @include font("Open Sans", 400, 14px, 14px, $primary2);
       }
     }
   }

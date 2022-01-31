@@ -14,6 +14,12 @@
     @include font("Open Sans Bold", 600, 16px, 14px, $primary2);
     padding-bottom: 1rem;
     text-align: center;
+    @include tablet {
+      @include font("Open Sans Bold", 600, 18px, 16px, $primary2);
+    }
+    @include desktop {
+      @include font("Open Sans Bold", 600, 20px, 18px, $primary2);
+    }
   }
 
   &_container {
@@ -26,6 +32,9 @@
         height: 2.5rem;
         @include tablet {
           height: 3rem;
+        }
+        @include desktop {
+          height: 4rem;
         }
       }
     }
