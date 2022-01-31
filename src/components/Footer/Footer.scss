@@ -17,8 +17,9 @@
     // opacity: 50%;
 
     &-item {
-      border-right: 1px solid $primary;
+      border-right: 1px solid grey;
       padding: 0 1rem;
+      color: grey;
     }
 
     &-item:last-child {

@@ -1,6 +1,11 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/variables" as *;
 
-.playerCards {
-  @include flex(center, center, row);
+// .playerCards {
+//   @include flex(center, center, row);
+// }
+
+.App {
+  padding: 0 4rem;
+  background-color: #000080;
 }

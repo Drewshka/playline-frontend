@@ -9,7 +9,7 @@ export const PlayerCard = ({ name, points, index }) => {
       <figure
         className={"playerCard_figure" + (index === 0 ? "_first" : "")}
         style={{
-          zIndex: index === 6 ? -1 : "",
+          zIndex: index === 6 ? 0 : "",
         }}>
         <img className="playerCard_img" src={image} alt="headshots" />
       </figure>
