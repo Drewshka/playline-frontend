@@ -8,7 +8,6 @@ export const CardHeader = () => {
       <h3 className="cardHeader_headerSub">
         COME BACK @ 7:30PM TO TRACK IT LIVE!
       </h3>
-      {/* <LineElement /> */}
       <div className="cardHeader_line" />
       <p className="cardHeader_para">
         Pro Tip: you can manage your Playline's until they go live in the

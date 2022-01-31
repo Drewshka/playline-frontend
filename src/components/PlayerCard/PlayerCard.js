@@ -6,11 +6,7 @@ export const PlayerCard = ({ name, points, index }) => {
 
   return (
     <div className="playerCard">
-      <figure
-        className={"playerCard_figure" + (index === 0 ? "_first" : "")}
-        style={{
-          zIndex: index === 6 ? 0 : "",
-        }}>
+      <figure className="playerCard_figure">
         <img className="playerCard_img" src={image} alt="headshots" />
       </figure>
       <div className="playerCard_info">

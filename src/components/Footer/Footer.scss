@@ -3,23 +3,24 @@
 
 .footer {
   &_list {
-    @include flex(center, center, row);
+    @include font("Open Sans", 400, 14px, 16px, $primary);
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $primary;
-    padding: 1rem;
-    font-size: 12px;
-    padding-bottom: 5rem;
-    // display: flex;
-    // background: $backgroundAccent;
-    // border-radius: 2rem;
-    // font-family: SfLight;
-    // opacity: 50%;
+    text-align: center;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    @include tablet {
+      @include flex(center, center, row);
+      padding: 1rem;
+      padding-bottom: 5rem;
+    }
 
     &-item {
-      border-right: 1px solid grey;
       padding: 0 1rem;
       color: grey;
+      @include tablet {
+        border-right: 1px solid grey;
+      }
     }
 
     &-item:last-child {

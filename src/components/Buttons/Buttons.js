@@ -8,7 +8,6 @@ export const Buttons = () => {
     <section className="buttons">
       <div>
         <a className="buttons_link" href="https://app.playline.com/">
-          {/* <figure> */}
           <button className="buttons_notify">
             <img
               className="buttons_notify-icon"
@@ -17,12 +16,10 @@ export const Buttons = () => {
             />
             <p className="buttons_notify-para">Notify Me</p>
           </button>
-          {/* </figure> */}
         </a>
       </div>
       <div>
         <a className="buttons_link" href="https://app.playline.com/">
-          {/* <figure> */}
           <button className="buttons_deposit">
             <img
               className="buttons_deposit-icon"
@@ -32,7 +29,6 @@ export const Buttons = () => {
             <p className="buttons_deposit-para">Deposit</p>
           </button>
           <div className="line" />
-          {/* </figure> */}
         </a>
       </div>
     </section>

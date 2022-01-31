@@ -1,6 +1,5 @@
 import "./MainCard.scss";
 import React from "react";
-// import data from "./data/players.json";
 import data from "../../data/players.json";
 import { PlayerCard } from "../PlayerCard/PlayerCard";
 import { Progress } from "../Progress/Progress";
@@ -23,7 +22,7 @@ class MainCard extends React.Component {
         <CardHeader />
         <section className="playerCards">
           {players &&
-            players.map((player, i) => {
+            players.reverse().map((player, i) => {
               return (
                 <PlayerCard
                   key={i}
