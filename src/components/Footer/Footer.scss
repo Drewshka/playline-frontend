@@ -14,6 +14,9 @@
       padding: 1rem;
       padding-bottom: 5rem;
     }
+    @include desktop {
+      @include font("Open Sans", 400, 20px, 22px, $primary);
+    }
 
     &-item {
       padding: 0 1rem;

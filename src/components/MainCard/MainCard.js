@@ -13,9 +13,8 @@ class MainCard extends React.Component {
   };
 
   render() {
-    console.log(this.state.players.players);
-
     const players = this.state.players.players;
+
     return (
       <div className="MainCard">
         <Progress />
@@ -28,7 +27,6 @@ class MainCard extends React.Component {
                   key={i}
                   name={player.last_name}
                   points={player.points}
-                  index={i}
                 />
               );
             })}

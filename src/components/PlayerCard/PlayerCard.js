@@ -1,7 +1,7 @@
 import React from "react";
 import "./PlayerCard.scss";
 
-export const PlayerCard = ({ name, points, index }) => {
+export const PlayerCard = ({ name, points }) => {
   const image = require(`../../assets/headshots/${name}.png`);
 
   return (

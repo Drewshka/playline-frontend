@@ -15,6 +15,7 @@
     margin-bottom: 0;
     @include tablet {
       margin: 0.625rem;
+      margin-bottom: 0;
     }
   }
 
@@ -52,6 +53,7 @@
       border-radius: 50%;
       border: 2px solid grey;
       letter-spacing: 1px;
+      margin: 0;
       @include tablet {
         @include font("Righteous Regular", 400, 14px, 16px, $primary);
       }
