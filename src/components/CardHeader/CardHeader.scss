@@ -15,7 +15,7 @@
   }
 
   &_headerSub {
-    @include font("Righteous Regular", 400, 14px, 16px, $primary2);
+    @include font("Righteous Regular", 400, 13px, 16px, $primary2);
     margin-top: 0;
     text-align: center;
     @include tablet {
