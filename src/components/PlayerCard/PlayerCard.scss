@@ -1,0 +1,77 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.playerCard {
+  @include flex(center, center, column);
+  margin-left: -1.5rem;
+  min-height: 8rem;
+  margin-top: 0;
+  @include tablet {
+    margin-top: 2rem;
+  }
+
+  &_figure {
+    margin: 0.625rem;
+    margin-bottom: 0;
+    @include tablet {
+      margin: 0.625rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &_img {
+    height: 2.2rem;
+    background-color: lightgray;
+    border-radius: 50%;
+    border: 2px solid white;
+    @include tablet {
+      height: 3rem;
+    }
+    @include desktop {
+      height: 4rem;
+    }
+  }
+
+  &_info {
+    @include flex(center, center, column);
+
+    &-name {
+      @include font("Open Sans", 400, 8px, 10px, $primary2);
+      @include tablet {
+        @include font("Open Sans", 400, 12px, 14px, $primary2);
+      }
+      @include desktop {
+        @include font("Open Sans", 400, 14px, 16px, $primary2);
+      }
+    }
+
+    &-points {
+      @include font("Righteous Regular", 400, 10px, 12px, $primary);
+      background-color: white;
+      box-shadow: 0 0 0.1rem $primary;
+      padding: 0.4rem;
+      border-radius: 50%;
+      border: 2px solid grey;
+      letter-spacing: 1px;
+      margin: 0;
+      @include tablet {
+        @include font("Righteous Regular", 400, 14px, 16px, $primary);
+      }
+      @include desktop {
+        @include font("Righteous Regular", 400, 16px, 18px, $primary);
+      }
+    }
+
+    &-pts {
+      @include font("Open Sans", 400, 8px, 10px, $primary2);
+      padding-bottom: 1rem;
+      text-align: center;
+      @include tablet {
+        @include font("Open Sans", 400, 12px, 14px, $primary2);
+      }
+      @include desktop {
+        @include font("Open Sans", 400, 14px, 14px, $primary2);
+      }
+    }
+  }
+}

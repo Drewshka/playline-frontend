@@ -1,0 +1,44 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.cardHeader {
+  &_headerMain {
+    @include font("Righteous Regular", 400, 22px, 20px, $primary);
+    margin-bottom: 0;
+    text-align: center;
+    @include tablet {
+      @include font("Righteous Regular", 400, 36px, 32px, $primary);
+    }
+    @include desktop {
+      @include font("Righteous Regular", 400, 46px, 42px, $primary);
+    }
+  }
+
+  &_headerSub {
+    @include font("Righteous Regular", 400, 13px, 16px, $primary2);
+    margin-top: 0;
+    text-align: center;
+    @include tablet {
+      @include font("Righteous Regular", 400, 21px, 32px, $primary2);
+    }
+    @include desktop {
+      @include font("Righteous Regular", 400, 26px, 32px, $primary2);
+    }
+  }
+
+  &_para {
+    @include font("Open Sans", 400, 10px, 14px, $primary2);
+    text-align: center;
+    @include tablet {
+      @include font("Open Sans", 400, 16px, 18px, $primary2);
+    }
+  }
+
+  &_line {
+    border-bottom: 2px solid $primary2;
+    opacity: 20%;
+    margin-top: 1rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
